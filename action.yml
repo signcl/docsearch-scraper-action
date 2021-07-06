@@ -1,5 +1,5 @@
 name: 'DocSearch Scraper Action'
-description: 'DocSearch Scraper in Docker for Github Actions'
+description: 'Algolia DocSearch Scraper in Docker for GitHub Actions'
 runs:
   using: 'docker'
   image: 'Dockerfile'
