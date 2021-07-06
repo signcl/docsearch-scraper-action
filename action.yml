@@ -3,3 +3,6 @@ description: 'Algolia DocSearch Scraper in Docker for GitHub Actions'
 runs:
   using: 'docker'
   image: 'Dockerfile'
+branding:
+  icon: 'search'
+  color: 'purple'
