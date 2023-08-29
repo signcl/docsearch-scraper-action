@@ -25,7 +25,7 @@ The tricky part is how to pass `CONFIG` to the scraper. The above example won't 
 
 - name: Get the content of algolia.json as config
   id: algolia_config
-  run: echo "::set-output name=config::$(cat algolia.json | jq -r tostring)"
+  run: echo "config=$(cat algolia.json | jq -r tostring)" >> $GITHUB_OUTPUT
 
 - name: Push indices to Algolia
   uses: signcl/docsearch-scraper-action@master
